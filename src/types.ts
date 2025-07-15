@@ -10,3 +10,10 @@ export interface Audit {
   responsible: string;
   answers: AuditAnswer[];
 }
+
+export interface Meeting {
+  id: number;
+  date: string;
+  subject: string;
+  participants: string;
+}
