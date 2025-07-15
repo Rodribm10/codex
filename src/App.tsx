@@ -3,6 +3,8 @@ import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import AuditForm from './pages/AuditForm';
 import Reports from './pages/Reports';
+import Meetings from './pages/Meetings';
+import Performance from './pages/Performance';
 import Header from './components/Header';
 import { useAuth } from './auth';
 
@@ -29,6 +31,14 @@ export default function App() {
         <Route
           path="/reports"
           element={<PrivateRoute><Reports /></PrivateRoute>}
+        />
+        <Route
+          path="/meetings"
+          element={<PrivateRoute><Meetings /></PrivateRoute>}
+        />
+        <Route
+          path="/performance"
+          element={<PrivateRoute><Performance /></PrivateRoute>}
         />
       </Routes>
     </>
